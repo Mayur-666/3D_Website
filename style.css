@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow: hidden;
+    cursor:url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1159.png), auto !important;
+}
+header{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    margin-top: -10px;
+}
+nav{
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+h3{
+    font-size: 3rem;
+    margin: 0 30px;
+    animation: colorChange 1s ease-in-out 1s infinite ;
+    animation: name duration timing-function;
+}
+span{
+    animation: colorC 1s ease-out 1s infinite ;
+}
+@keyframes colorC {
+    0%{
+        color: black;
+    }50%{
+        color: red;
+    }100%{
+        color: black;
+    }
+}
+@keyframes colorChange {
+    0%{
+        color: red;
+    }50%{
+        color: black;
+    }100%{
+        color: red;
+    }
+}
+.nav_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3, .nav_links>p, .register{
+    cursor: pointer;
+}
+.nav_links > p{
+    padding: 0 40px;
+}
+.nav_links > p:hover, .register:hover{
+    transform: scale(1.1);
+    color:#826969;
+}
+.register{
+    margin: 0 30px 0 0;
+}
+.wrapper{
+    position: relative;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./Assets/Backimage.png");
+    background-position: 50%;
+    transition: all 1s;
+    transform: scale(1.2);
+}
+.can-upper{
+    width: 285px;
+    height: 550px;
+    filter: drop-shadow(20px 20px 50px #373333);
+    z-index: 4;
+    transition: all 1s;
+}
+.can-upper:hover{
+    transform: rotate(20deg);
+}
+.can{
+    height: 550px;
+    width: 285px;
+    background: url("./Assets/can.png"), url("./Assets/Labels.png");
+    transform: scale(0.8);
+    background-size: cover, 300% 120%;
+    background-position: center, 50%;
+    transition: all 1s;
+    background-blend-mode: multiply;
+    z-index: 3;
+    background-repeat: no-repeat; 
+    clip-path: polygon(8.5% 0.4%, 90.5% 0.6% , 89.4% 2.4%, 89% 2.7%, 89% 3%, 95.2% 10%,
+    98.4% 14%,98.6% 20%, 99.1% 94%,98.1% 95.3%, 98% 95.3%,96% 96% ,96% 96% ,90% 97%, 
+    87% 98.7% ,85% 99%, 40% 99%, 14.7% 99% ,12.5% 98.7%, 10% 97.9%, 9% 97%, 5% 96.7%,
+    3% 96.2%,1% 95%, 0% 94%, 0.5% 14%, 9.9% 2.9%, 9.7% 2.5%, 9.5% 2.2%,9.1% 2% ,8% 0.9%);
+}
+.minty{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    filter: brightness(1.2);
+}
+#minty1{
+    width: 120px;
+    transform: translate(30px,50px);   
+}
+#minty2{
+    width: 120px;
+    transform: translate(150px,440px) rotate(50deg);
+}
+#minty1, #minty2{
+    transition: all 1s;
+}
+.text{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: -2;
+    width: 300vw;
+    font-size: 350px;
+    font-family: fantasy, sans-serif;
+    letter-spacing: 60px;
+    transition: all 1s;
+}
+.text1, .text2, .text3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    margin-left: 25px;
+    transition: all 1s;
+}
+.carousel{
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    transition: all 1s;
+    filter: drop-shadow(10px 300px 60px #211f1f);
+}
+.carousel .car {
+    width: 100%;
+    height: 100vh;
+    transition: all 1s;
+    transform: perspective(400px);
+}
+#exotic-1{
+    width: 300px;
+    transform: translate(100px,200px) rotate(350deg);
+}
+#exotic-2{
+    width: 140px;
+    transform: translate(40px,-160px) rotate(15deg);
+}
+#exotic-3{
+    width: 170px;
+    transform: translate(400px,130px) rotate(160deg);
+    filter: blur(2px);
+}
+#exotic-4{
+    width: 220px;
+    transform: translate(600px,-50px) rotate(170deg);
+    filter: blur(3px);
+}
+
+#apple-1{
+    width: 300px;
+    transform: translate(50px,320px) rotate(345deg);
+    filter: blur(5px);
+}
+#apple-2{
+    width: 200px;
+    transform: translate(-30px,-30px) rotate(0deg);
+}
+#apple-3{
+    width: 200px;
+    transform: translate(500px,-50px) rotate(140deg);
+}
+#apple-4{
+    width: 250px;
+    transform: translate(450px,310px) rotate(350deg);
+}
+
+#pear-1{
+    width: 400px;
+    transform: translate(10px,100px) rotate(-90deg);
+    filter: blur(2px);
+}
+#pear-2{
+    width: 140px;
+    transform: translate(-30px,-250px);
+    filter: blur(2px);
+}
+#pear-3{
+    width: 200px;
+    transform: translate(370px,-200px) rotate(70deg);
+}
+#pear-4{
+    width: 300px;
+    transform: translate(350px,110px) ;
+}
