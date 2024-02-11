@@ -4,4 +4,6 @@
 <br>
 A 3d looking website using HTML, CSS and Vanilla JS.
 
-Checkout the site live at :- https://3d-website-mayur.netlify.app/
+Checkout the site live at netlify :- https://3d-website-mayur.netlify.app/
+<br>
+and at github pages :- https://mayur-666.github.io/3D_Website/
